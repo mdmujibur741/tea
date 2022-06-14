@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+     <!-- ===================================================== -->
+                    <!-- HEADER SECTION -->
+    <!-- ===================================================== -->
+    <header class="home_header_section">
+        <div class="container-fluid">
+            <div class="row row-eq-height py-5 pe-4">
+      
+                <div class="col-2 text-end pt-4">
+                        <img src="asset/image/logo.png" alt="gov logo" class="rounded-circle home_header_logo" srcset="">
+                </div>
+      
+                <div class="col-4 pt-4">
+                    <span class="text-light fs-2"><b>মৌলভীবাজার চা বাগান</b></span><br>
+                    <span class="text-light fs-4"><b>MOULVIBAZAR TEA GARDEN</b></span>
+                </div>
+      
+                <div class="col-2 head_img p-0">
+                    <img src="asset/image/2950945-min.jpg" alt="" class="img-thumbnail w-100">
+                </div>
+      
+                <div class="col-2 head_img p-0">
+                    <img src="asset/image/anil-xavier-QiKxQgMCxXY-unsplash-min.jpg" alt="" class="img-thumbnail w-100">
+                </div>
+      
+                <div class="col-2 head_img p-0">
+                        <img src="asset/image/engin-akyurt-QfbyNUCVNos-unsplash-min.jpg" alt="" class="img-thumbnail w-100">
+                </div>
+            
+            </div>
+        </div>
+      </header>
+      
+       
+
+
+  <!-- nav start -->
+  <div class="nav_section my-3 d-flex justify-content-center">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item px-2">
+                <a class="nav-link active text-white" aria-current="page" href="home.html"><b>হোম</b></a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-white" href="profile.html"><b>প্রোফাইল</b></a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-white" href="garden_list.html"><b>বাগান তালিকা</b></a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-white" href="#"><b>নোটিস সমূহ</b></a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-white" href="add_garden.html"><b>নিবন্ধন করুন</b></a>
+              </li>
+               <li class="nav-item px-2">
+              <a class="nav-link text-white" href="communication.html"><b>যোগাযোগ</b></a>
+            </li>
+              <li class="nav-item dropdown px-2">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <b>  বাগান</b>
+                </a>
+                <ul class="dropdown-menu drop_bg" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item text-white" href="profile.html">প্রোফাইল</a></li>
+                  <li><a class="dropdown-item text-white" href="garden_list.html">বাগান তালিকা</a></li>
+                  <li><a class="dropdown-item text-white" href="#">স্কুল সমূহ</a></li>
+                 
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </div>
+ <!-- nav end -->
+
+
+    <!-- =============================================== -->
+                 <!-- ADD GARDEN SECTION START -->
+    <!-- =============================================== -->
+    <section class="add_garden_section">
+          <h3 class="text-center text_shadow">  <b>বাগান নিবন্ধন</b> </h3>
+        <form action="" method="post">
+            <div class="container-fluid px-4">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="mb-3">
+                            <label for="garden_name">বাগান নাম</label>
+                            <input type="text" id="garden_name" name="garden_name" class="form-control form-control-sm">
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="mb-3">
+                            <label for="garden_class">বাগান শ্রেণী</label>
+                             <select name="garden_class" id="garden_class" class="form-select form-select-sm">
+                                <option disabled selected value="">নির্বাচন করুন</option>
+                                 <option value="ভালো">ভালো</option>
+                                 <option value="মাঝামাঝি">মাঝামাঝি</option>
+                                 <option value="খারাপ">খারাপ</option>
+                             </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="owner_name">মালিকের নাম</label>
+                            <input type="text" id="owner_name" name="owner_name" class="form-control form-control-sm">
+                        </div>
+                        <div class="mb-3">
+                            <label for="owner_father_name">মালিকের পিতার নাম </label>
+                            <input type="text" id="owner_father_name" name="owner_father_name" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="owner_nid_number">মালিকের ভোটার আইডি নং( ইংরেজিতে)</label>
+                            <input type="text" id="nid_number" name="owner_nid_number" class="form-control form-control-sm">
+                        </div>
+                        <div class="mb-3">
+                            <label for="owner_tin_number">মালিকের টিন নং (TIN NO) ইংরেজিতে </label>
+                            <input type="text" id="owner_tin_number" name="owner_tin_number" class="form-control form-control-sm">
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="owner_mobile">মালিকের মোবাইল নং (ইংরেজিতে)</label>
+                            <input type="text" id="owner_mobile" name="owner_mobile" class="form-control form-control-sm">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">মালিকের ইমেইল (ইংরেজিতে) </label>
+                            <input type="text" id="email" name="owner_email" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="manager_name"> ব্যাবস্থাপক নাম </label>
+                            <input type="text" id="manager_name" name="manager_name" class="form-control form-control-sm">
+                        </div>
+                        <div class="mb-3">
+                            <label for="manager_father_name">ব্যাবস্থাপক পিতার নাম </label>
+                            <input type="text" id="manager_father_name" name="manager_father_name" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="owner_address">মালিকের ঠিকানা</label>
+                            <textarea name="owner_address" id="owner_address" rows="2" class="form-control form-control-sm rounded"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="manager_address">ব্যাবস্থাপতকর ঠিকানা</label>
+                            <textarea name="manager_address" id="manager" rows="2"  class="form-control form-control-sm rounded"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="manager_nid_number"> ব্যাবস্থাপক ভোটার আইডি নং(ইংরেজিতে)</label>
+                            <input type="text" id="manager_nid_number" name="manager_nid_number" class="form-control form-control-sm">
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="manager_tin_number">ব্যাবস্থাপক টিন নং (TIN NO ,ইংরেজিতে) </label>
+                            <input type="text" id="manager_tin_number" name="manager_tin_number" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="owner_mobile">ব্যাবস্থাপকের মোবাইল নং (ইংরেজিতে)</label>
+                            <input type="text" id="owner_mobile" name="owner_mobile" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="email">ব্যাবস্থাপকের ইমেইল (ইংরেজিতে)</label>
+                            <input type="text" id="email" name="owner_email" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="partners">বাগানের অংশীদারগনের নাম (যদি থাকে) </label>
+                            <input type="text" id="partners" name="partners" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="partner_address">অংশীদারগনের ঠিকানা (যদি থাকে) </label>
+                            <input type="text" id="partner_address" name="partner_address" class="form-control form-control-sm">
+                        </div>
+                    </div>
+
+
+                    <!-- ==================================================== -->
+                    <!-- বাগানের অবস্থান বিষয়ক তথ্য -->
+                    <!-- ==================================================== -->
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="upazila">উপজেলা নাম </label>
+                            <select name="upazila" id="upazila" class="form-select form-select-sm">
+                                  <option value="" selected disabled>নির্বাচন করুন উপজেলা</option>
+                                  <option value="সদর">সদর</option>
+                                  <option value="কুলাউরা">কুলাউরা</option>
+                                  <option value="জুড়ি">জুড়ি</option>
+                                  <option value="রাজনগর">রাজনগর</option>
+                                  <option value="শ্রীমঙ্গল">শ্রীমঙ্গল</option>
+                                  <option value="বড়লেখা">বড়লেখা</option>
+                                  <option value="কমলগজ্ঞ">কমলগজ্ঞ</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="mouza"> মৌজার নাম</label>
+                            <input type="text" id="mouza" name="mouza" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="zl_no"> জে. এল নম্বর </label>
+                            <input type="text" id="zl_no" name="zl_no" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="lease_deed">লীজ ডীড নম্বর </label>
+                            <input type="text" id="lease_deed" name="lease_deed" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="lease_deed_date">লীজ ডীড তারিখ </label>
+                            <input type="date" id="lease_deed_date" name="lease_deed_date" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="lease_deed_expire_date">লীজ ডীড অতিক্রান্ত তারিখ </label>
+                            <input type="date" id="lease_deed_expire_date" name="lease_deed_expire_date"
+                                class="form-control form-control-sm">
+                        </div>
+                    </div>
+
+
+
+                    <!-- ==================================================== -->
+                    <!-- ভূমি বিষয়ক তথ্য -->
+                    <!-- ==================================================== -->
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="lease_land"> ইজারাকৃত মোট ভূমি(একর) </label>
+                            <input type="text" id="lease_land" name="lease_land" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="lease_ledger"> ইজারাকৃত ভূমির খতিয়ান </label>
+                            <input type="text" id="lease_ledger" name="lease_ledger" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="lease_stain"> ইজারাকৃত ভূমি দাগ </label>
+                            <input type="text" id="lease_stain" name="lease_stain" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="lease_class"> ইজারাকৃত ভূমির শ্রেণী </label>
+                            <input type="text" id="lease_class" name="lease_class" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="tea_total_land">চা চাষের মোট ভূমির পরিমান (একর) </label>
+                            <input type="text" id="tea_total_land" name="tea_total_land" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="rabber_total_land"> রাবার মোট ভূমি পরিমান (যদি থাকে) (একর)</label>
+                            <input type="text" id="rabber_total_land" name="rabber_total_land" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="other_garden_total_land"> অন্যান্য বাগানকৃত মোট ভূমির পরিমান (একর)</label>
+                            <input type="text" id="other_garden_total_land" name="other_garden_total_land"
+                                class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="fallen_land"> পতিত মোট জমি (একর)</label>
+                            <input type="text" id="fallen_land" name="fallen_land" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="other_staff_land"> বাংলো স্টাফ ও লেবার কোয়ার্টার ভূমির পরিমান (একর) </label>
+                            <input type="text" id="other_staff_land" name="other_staff_land" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="cultivated_tea_land"> আবাদকৃত চা চাষের ভূমির পরিমান (একর) </label>
+                            <input type="text" id="cultivated_tea_land" name="cultivated_tea_land" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="planted_shade_other "> আবাদকৃত ছায়া ও অন্যান্য বৃক্ষের পরিমান (একর)</label>
+                            <input type="text" id="planted_shade_other" name="planted_shade_other" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="annual_total_rent"> বার্ষিক মোট খাজনা</label>
+                            <input type="text" id="annual_total_rent" name="annual_total_rent" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="lattest_rent"> সর্বশেষ পরিশোধকৃত খাজনা(যদি থাকে) </label>
+                            <input type="text" id="lattest_rent" name="lattest_rent" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="lease_money_rr">লীজমানির আর আর (যদি থাকে) </label>
+                            <input type="text" id="lease_money_rr" name="lease_money_rr" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="dcr_no"> ডিসিআর নম্বর (যদি থাকে) </label>
+                            <input type="text" id="dcr_no" name="dcr_no" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="lattest_rent_date"> সর্বশেষ পরিশোধকৃত খাজনার তারিখ </label>
+                            <input type="text" id="lattest_rent_date" name="lattest_rent_date" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="mb-3">
+                            <label for="union_name"> ইউনিয়ন ভূমি অফিস নাম </label>
+                            <input type="text" id="union_name" name="union_name" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-12">
+                        <div class="mb-3">
+                            <label for="law_order"> চা বাগানের আইন-শৃঙ্খলা অবস্থা</label>
+                            <textarea name="law_order" id="law_order" rows="2" name="law_order" class="form-control form-control-sm rounded"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- ==================================================== -->
+                    <!-- স্বাস্থ্য বিষয়ক তথ্য -->
+                    <!-- ==================================================== -->
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="mb-3">
+                            <label for="clinic"> হাসপাতাল সংখ্যা </label>
+                            <input type="text" id="clinic" name="clinic" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="mb-3">
+                            <label for="beds"> হাসপাতালে বেড সংখ্যা</label>
+                            <input type="text" id="beds" name="beds" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="mb-3">
+                            <label for="doctors"> ডাক্তার সংখ্যা </label>
+                            <input type="text" id="doctors" name="doctors" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="mb-3">
+                            <label for="nurse"> নার্সের সংখ্যা</label>
+                            <input type="text" id="nurse" name="nurse" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="compounders"> কম্পাউন্ডারের সংখ্যা </label>
+                            <input type="text" id="compounders" name="compounders" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="ripe_washroom">বাগানে পাকা ল্যাট্রিন সংখ্যা </label>
+                            <input type="text" id="ripe_washroom" name="ripe_washroom" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="raw_washroom">বাগানে কাচা ল্যাট্রিন সংখ্যা</label>
+                            <input type="text" id="raw_washroom" name="raw_washroom" class="form-control form-control-sm">
+                        </div>
+                    </div>
+
+
+
+                    <!-- ==================================================== -->
+                    <!-- শিক্ষা বিষয়ক তথ্য -->
+                    <!-- ==================================================== -->
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="primary"> প্রাথমিক বিদ্যালয় সংখ্যা</label>
+                            <input type="text" id="primary_schools" name="primary_schools" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="primary_students">প্রাথমিকের ছাত্র-ছাত্রী সংখ্যা</label>
+                            <input type="text" id="primary_students" name="primary_students" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="secodary"> মাধ্যমিক বিদ্যালয় সংখ্যা</label>
+                            <input type="text" id="secodary" name="secodary" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="secodary_students"> মাধ্যমিকের ছাত্র-ছাত্রী সংখ্যা</label>
+                            <input type="text" id="secodary_students" name="secodary_students" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="higer_students"> উচ্চ শিক্ষায় অংশীগ্রহনকারির সংখ্যা</label>
+                            <input type="text" id="higer_students" name="higer_students" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-12">
+                        <div class="mb-3">
+                            <label for="tourism_spot">পর্যটন স্পট এর বিবরন (যদি থাকে)</label>
+                            <textarea name="tourism_spot" id="tourism_spot" rows="2" class="form-control form-control-sm rounded"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+
+                
+
+                    <!-- ==================================================== -->
+                                 <!-- বিনোদনমূলক বিষয় -->
+                    <!-- ==================================================== -->
+                        <div class="mb-3">
+                            <label for="playing_field"> খেলার মাঠের সংখ্যা</label>
+                            <input type="text" id="playing_field" name="playing_field" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="stages"> মঞ্চ সংখ্যা/প্যান্ডেল সংখ্যা </label>
+                            <input type="text" id="stages" name="stages" class="form-control form-control-sm">
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- ==================================================== -->
+                    <!--  মুক্তিযুদ্ধ বিষয়ক তথ্য -->
+                    <!-- ==================================================== -->
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="strange_place"> মুক্তিযুদ্ধ স্মৃতি বিজরিত স্থান নাম (যদি থাকে) </label>
+                            <input type="text" id="strange_place" name="strange_place" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="monument"> মুক্তিযুদ্ধ সৌধ </label>
+                            <input type="text" id="monument" name="monument" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="freedom_fighters"> মুক্তিযুদ্ধার সংখ্যা (জীবিত বা মৃত) </label>
+                            <input type="text" id="freedom_fighters" name="freedom_fighters" class="form-control form-control-sm">
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- ==================================================== -->
+                    <!-- শ্রমিক সংক্রান্ত বিষয় -->
+                    <!-- ==================================================== -->
+
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="tea_workers"> মোট চা শ্রমিক সংখ্যা </label>
+                            <input type="text" id="tea_workers" name="tea_workers" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="communitys"> কতটি সম্প্রদায় </label>
+                            <input type="text" id="communitys" name="communitys" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="workers_communitys"> চা শ্রমিক উপজাতি সম্প্রদায় সমূহ </label>
+                            <input type="text" id="workers_communitys" name="workers_communitys" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="advanced_education"> শিক্ষায় অগ্রসর সম্প্রদায় </label>
+                            <input type="text" id="advanced_education" name="advanced_education" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="education_rate"> শিক্ষার হার </label>
+                            <input type="text" id="education_rate" name="education_rate" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="mb-3">
+                            <label for="stipend"> বাগানের থেকে মেধাবীদের উপবৃত্তী দিলে নাম </label>
+                            <input type="text" id="stipend" name="stipend" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12  col-lg-12">
+                        <div class="mb-3">
+                            <label for="worker_name"> শ্রমিকদের বাসস্থানের বিবরন </label>
+                            <textarea name="worker_name" id="worker_name" rows="2" class="form-control form-control-sm rounded"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="worker_living_improve"> শ্রমিকদের জীবনমান উন্নয়নে প্রকল্প থাকলে নাম </label>
+                            <input type="text" id="worker_living_improve" name="worker_living_improve"
+                                class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="worker_ongoing_project">শ্রমিকদের জীবনমান উন্নয়নে চলমান প্রকল্প </label>
+                            <input type="text" id="worker_ongoing_project" name="worker_ongoing_project"
+                                class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="ongoing_project">শ্রমিকদের জীবনমান উন্নয়নে সমাপ্ত প্রকল্প (যদি থাকে) </label>
+                            <input type="text" id="ongoing_project" name="ongoing_project" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="rivers"> চা বাগানে প্রবাহিত নদ নদীর সংখ্যা </label>
+                            <input type="text" id="rivers" name="rivers" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-12">
+                        <div class="mb-3">
+                            <label for="river_name"> চা বাগানে প্রবাহিত নদ নদীর নামসমূহ </label>
+                            <input type="text" id="river_name" name="river_name" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-12">
+                        <div class="mb-3">
+                            <label for="drug"> মাদক দ্রব্য নিয়ত্রণ কার্যক্রম </label>
+                            <textarea name="drug" id="drug" rows="2" class="form-control form-control-sm rounded"></textarea>
+                        </div>
+                    </div>
+
+
+                    <!-- ==================================================== -->
+                                     <!-- যাতায়ত ব্যাবস্থা -->
+                    <!-- ==================================================== -->
+
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="distric_distance"> জেলা সদর থেকে দূরত্ব ও যোগাযোগ ব্যাবস্থা </label>
+                            <textarea name="distric_distance" id="distric_distance" rows="2" class="form-control form-control-sm rounded"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="upozila_distance"> উপজেলা সদর থেকে দূরত্ব ও যোগাযোগ ব্যাবস্থা </label>
+                            <textarea name="upozila_distance" id="upozila_distance" rows="2" class="form-control form-control-sm rounded"></textarea>
+                        </div>
+                    </div>
+
+
+                    <!-- ==================================================== -->
+                                     <!-- মামলা সংক্রান্ত  -->
+                    <!-- ==================================================== -->
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="case_no"> মামলার নম্বর </label>
+                            <input type="text" id="case_no" name="case_no" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="case_plantiff"> মামলার বাদী </label>
+                            <input type="text" id="case_plantiff" name="case_plantiff" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="case_defandent"> মামলার বিবাদী </label>
+                            <input type="text" id="case_defandent" name="case_defandent" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="court"> বিচারাধীন আদালতের নাম </label>
+                            <input type="text" id="court" name="court" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="case_type"> মামলার ধরন </label>
+                            <input type="text" id="case_type" name="case_type" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-3">
+                            <label for="lawyer"> মামলার সরকার পক্ষের আইনজীবির নাম </label>
+                            <input type="text" id="lawyer" name="lawyer" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="next_date_case"> মামলার আগামী তারিখ </label>
+                            <input type="date" id="next_date_case" name="next_date_case" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="case_result"> মামলার ফলাফল </label>
+                            <input type="text" id="case_result" name="case_result" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="case_order"> মামলার আদেশ অনুযায়ী গৃহীত ব্যাবস্থা </label>
+                            <input type="text" id="case_order" name="case_order" class="form-control form-control-sm">
+                        </div> 
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="mb-3">
+                            <label for="case_order"> বাগানের উন্নয়ন প্রকল্প চলমান (সরকার/বেসরকারি)(যদি থাকে) </label>
+                            <input type="text" id="case_order" name="case_order" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 ">
+                        <div class="mb-3">
+                            <label for="comment"> মন্তব্য </label>
+                            <textarea name="comment" id="comment" rows="2" class="form-control form-control-sm rounded"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                          <div class="mb-3">
+                         <center>
+                            <input type="submit" class="btn px-5" value="সাবমিট" >
+                         </center>
+                          </div>
+                    </div>
+                    
+                </div>
+        </form>
+    </section>
+
+     <!-- =============================================== -->
+                 <!-- ADD GARDEN SECTION END -->
+    <!-- =============================================== -->
+
+
+    <!--================= FOOTER SECTION START =================-->
+
+ 
+    <footer class="footer_section">
+        <div class="container-fluid">
+          <div class="row">
+               <div class="col-sm-12 col-md-4">
+                   
+                <div class="complane text-justify ps-3 py-4">
+                  <h5><b>অভিযোগ বা পরামর্শ</b></h5>
+                  <div class="item">
+                   <i class="fa-solid fa-envelope"></i> dcmoulvibazar@mopa.gov.bd
+                  </div>
+                  <div class="item">
+                   <i class="fa-solid fa-envelope"></i> adcgmoulvibazar@mopa.gov.bd
+                  </div>
+                  <div class="item">
+                   <i class="fa-solid fa-envelope"></i> acgeneralmoulvibazar@yahoo.com
+                  </div>
+                  
+                </div>
+                    
+               </div>
+               <div class="col-sm-12 col-md-4 mb-2">
+                
+                <div class="contact_office text-justify ps-3">
+                  <h5 class=""><b>যোগাযোগ</b></h5>
+                   <p>জেলা প্রশাসকের কার্যালয়
+                    মৌলভীবাজার</p>
+                 
+                   <div class="item">
+                    <i class="fa-solid fa-phone"></i>০৮৬১-৬৩২০২(অফিস)
+                   </div>
+                   <div class="item">
+                    <i class="fa-solid fa-phone"></i>০৮৬১-৬৩৩৩৩(অফিস)
+                   </div>
+                   <div class="item">
+                    <i class="fa-solid fa-phone"></i>০৮৬১-৬৩০৩৭(অফিস)
+                   </div>
+                   <div class="item">
+                    <i class="fa-solid fa-phone"></i>০৮৬১-৬৩২০১(বাসা)
+                   </div>
+                   <div class="item">
+                    <i class="fa-solid fa-phone"></i>০৮৬১-৫২৯৬৬ (বাসা)
+                   </div>
+    
+                </div>
+                
+              </div>
+              <div class="col-sm-12 col-md-4 mb-2">
+                    
+                <div class="importent_link text-justify ps-3">
+                  <h5 class=""><b>গুরুত্বপূর্ণ লিঙ্ক</b></h5>
+                  
+                  <div class="item">
+                    <i class="fa-solid fa-up-right-from-square"></i> <a href="http://www.moulvibazar.gov.bd/" target="_blank">মৌলভীবাজার তথ্যবাতায়ন</a>
+                  </div>
+                  <div class="item">
+                    <i class="fa-solid fa-up-right-from-square"></i> <a href="http://services.portal.gov.bd/" target="_blank">বাংলাদেশ সেবাকুঞ্জ</a>
+                  </div>
+                  <div class="item">
+                    <i class="fa-solid fa-up-right-from-square"></i> <a href="http://www.police.gov.bd/" target="_blank">বাংলাদেশ পুলিশ</a>
+                  </div>
+                  <div class="item">
+                    <i class="fa-solid fa-up-right-from-square"></i> <a href="http://www.passport.gov.bd/" target="_blank">বাংলাদেশ পাসপোর্ট অফিস</a>
+                  </div>
+                  <div class="item">
+                    <i class="fa-solid fa-up-right-from-square"></i> <a href="https://secure.incometax.gov.bd/TINHome" target="_blank">ই-টিন রেজিস্ট্রেশন</a>
+                  </div>
+                  <div class="item">
+                    <i class="fa-solid fa-up-right-from-square"></i> <a href="https://services.nidw.gov.bd/nid-pub/fees" target="_blank">জাতীয় পরিচয় পত্রের সেবা সংক্রান্ত</a>
+                  </div>
+                  <div class="item">
+                    <i class="fa-solid fa-up-right-from-square"></i> <a href="http://www.brta.gov.bd/newsite/bn/%E0%A6%B9%E0%A7%8B%E0%A6%AE/" target="_blank">বাংলাদেশ রোড ট্রান্সপোর্ট অথরিটি</a>
+                  </div>
+                </div>
+    
+              </div>
+          </div>
+        </div>
+    </footer>
+    
+    <!-- ===============FOOTER SECTION END============== -->
+
+
+    <script src="asset/js/popper.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+</body>
+
+</html>
